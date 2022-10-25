@@ -23,12 +23,12 @@ papersize: a4
 documentclass: scrreprt
 ## I18n polyglossia
 polyglossia-lang:
-  name: russian
-  options:
-	- spelling=modern
-	- babelshorthands=true
+name: russian
+options:
+- spelling=modern
+- babelshorthands=true
 polyglossia-otherlangs:
-  name: english
+name: english
 ## I18n babel
 babel-lang: russian
 babel-otherlangs: english
@@ -45,12 +45,12 @@ monofontoptions: Scale=MatchLowercase,Scale=0.9
 biblatex: true
 biblio-style: "gost-numeric"
 biblatexoptions:
-  - parentracker=true
-  - backend=biber
-  - hyperref=auto
-  - language=auto
-  - autolang=other*
-  - citestyle=gost-numeric
+- parentracker=true
+- backend=biber
+- hyperref=auto
+- language=auto
+- autolang=other*
+- citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
 figureTitle: "Рис."
 tableTitle: "Таблица"
@@ -61,15 +61,13 @@ lolTitle: "Листинги"
 ## Misc options
 indent: true
 header-includes:
-  - \usepackage{indentfirst}
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+- \usepackage{indentfirst}
+- \usepackage{float} # keep figures where there are in the text
+- \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
-# Цель работы 
+# Цель работы
 Освоение процедуры оформления отчетов с помощью легковесного языка разметки Markdown.
-
-
 
 # Задание
 
@@ -86,16 +84,16 @@ header-includes:
 
 : Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
 
-| Имя каталога | Описание каталога                                                                                                          |
+| Имя каталога | Описание каталога |
 |--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
+| `/` | Корневая директория, содержащая всю файловую |
+| `/bin ` | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям |
+| `/etc` | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ |
+| `/home` | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
+| `/media` | Точки монтирования для сменных носителей |
+| `/root` | Домашняя директория пользователя `root` |
+| `/tmp` | Временные файлы |
+| `/usr` | Вторичная иерархия для данных пользователя |
 
 Более подробно об Unix см. в [@gnu-doc:bash;@newham:2005:bash;@zarrelli:2017:bash;@robbins:2013:bash;@tannenbaum:arch-pc:ru;@tannenbaum:modern-os:ru].
 
@@ -111,17 +109,18 @@ header-includes:
 report.docx.Откроем и проверим корректность полученных файлов.
 ![2.png](image/2.jpg){ #fig:002 width=95% }
 Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig:003])
-3)Удалим полученные файлы с использованием Makefile. Для этого введем 
-команду make clean.Проверим,что после этой команды файлы report.pdf и report.docx были
+3)Удалим полученные файлы с использованием Makefile. Для этого введем
+команду make clean.Проверим,что после этой команды файлы report.pdf и report.docx
+были
 удалены.
 ![3.png](image/3.jpg){ #fig:003 width=95% }
 Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig:004])
 4)Откроем файл report.md c помощью любого текстового редактора, на-
 пример gedit gedit report .Изучим структуру этого файла.Заполним отчет и скомпилируем его с использованием Makefile. Про-
-верим корректность полученных файлов. 
+верим корректность полученных файлов.
 ![4.png](image/4.jpg){ #fig:004width=95% }
 # Выводы
-Я освоила процедуры оформления отчетов с помощью  лекговесного языка разметки Markdown .
+Я освоила процедуры оформления отчетов с помощью лекговесного языка разметки Markdown .
 
 # Список литературы{.unnumbered}
 
